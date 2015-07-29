@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01D9D58357D016E90A104C74 /* libPods-geny-webrtc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1725E9F99C13F2DBB4E39DF /* libPods-geny-webrtc.a */; };
 		EECF59D91B689BE3009D2408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF59D81B689BE3009D2408 /* AppDelegate.swift */; };
 		EECF59DC1B689BE3009D2408 /* geny_webrtc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EECF59DA1B689BE3009D2408 /* geny_webrtc.xcdatamodeld */; };
 		EECF59DE1B689BE3009D2408 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF59DD1B689BE3009D2408 /* ViewController.swift */; };
@@ -14,6 +15,8 @@
 		EECF59E31B689BE3009D2408 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EECF59E21B689BE3009D2408 /* Images.xcassets */; };
 		EECF59E61B689BE3009D2408 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EECF59E41B689BE3009D2408 /* LaunchScreen.xib */; };
 		EECF59F21B689BE3009D2408 /* geny_webrtcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF59F11B689BE3009D2408 /* geny_webrtcTests.swift */; };
+		EECF59FC1B689BFD009D2408 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECF59FB1B689BFD009D2408 /* VideoToolbox.framework */; };
+		EECF59FE1B689DC7009D2408 /* RTCAppClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF59FD1B689DC7009D2408 /* RTCAppClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C0A78AAD0FDDD0554974D9D /* Pods-geny-webrtc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geny-webrtc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-geny-webrtc/Pods-geny-webrtc.debug.xcconfig"; sourceTree = "<group>"; };
+		664C0F88B3F2204A516140E6 /* Pods-geny-webrtc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geny-webrtc.release.xcconfig"; path = "Pods/Target Support Files/Pods-geny-webrtc/Pods-geny-webrtc.release.xcconfig"; sourceTree = "<group>"; };
 		EECF59D31B689BE2009D2408 /* geny-webrtc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "geny-webrtc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECF59D71B689BE3009D2408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EECF59D81B689BE3009D2408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +43,10 @@
 		EECF59EB1B689BE3009D2408 /* geny-webrtcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "geny-webrtcTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECF59F01B689BE3009D2408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EECF59F11B689BE3009D2408 /* geny_webrtcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = geny_webrtcTests.swift; sourceTree = "<group>"; };
+		EECF59FB1B689BFD009D2408 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		EECF59FD1B689DC7009D2408 /* RTCAppClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTCAppClient.swift; sourceTree = "<group>"; };
+		EECF59FF1B689DFC009D2408 /* RTC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RTC-Bridging-Header.h"; sourceTree = "<group>"; };
+		F1725E9F99C13F2DBB4E39DF /* libPods-geny-webrtc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-geny-webrtc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EECF59FC1B689BFD009D2408 /* VideoToolbox.framework in Frameworks */,
+				01D9D58357D016E90A104C74 /* libPods-geny-webrtc.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +69,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A6E590929436302CD88D4C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C0A78AAD0FDDD0554974D9D /* Pods-geny-webrtc.debug.xcconfig */,
+				664C0F88B3F2204A516140E6 /* Pods-geny-webrtc.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		938144550F88D9C1B8654592 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1725E9F99C13F2DBB4E39DF /* libPods-geny-webrtc.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EECF59CA1B689BE2009D2408 = {
 			isa = PBXGroup;
 			children = (
+				EECF59FB1B689BFD009D2408 /* VideoToolbox.framework */,
 				EECF59D51B689BE2009D2408 /* geny-webrtc */,
 				EECF59EE1B689BE3009D2408 /* geny-webrtcTests */,
 				EECF59D41B689BE2009D2408 /* Products */,
+				0A6E590929436302CD88D4C0 /* Pods */,
+				938144550F88D9C1B8654592 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +117,8 @@
 				EECF59E41B689BE3009D2408 /* LaunchScreen.xib */,
 				EECF59DA1B689BE3009D2408 /* geny_webrtc.xcdatamodeld */,
 				EECF59D61B689BE2009D2408 /* Supporting Files */,
+				EECF59FD1B689DC7009D2408 /* RTCAppClient.swift */,
+				EECF59FF1B689DFC009D2408 /* RTC-Bridging-Header.h */,
 			);
 			path = "geny-webrtc";
 			sourceTree = "<group>";
@@ -122,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EECF59F51B689BE3009D2408 /* Build configuration list for PBXNativeTarget "geny-webrtc" */;
 			buildPhases = (
+				3297712BD9EC2C4BF552BF72 /* Check Pods Manifest.lock */,
 				EECF59CF1B689BE2009D2408 /* Sources */,
 				EECF59D01B689BE2009D2408 /* Frameworks */,
 				EECF59D11B689BE2009D2408 /* Resources */,
+				B7D3539DBA159D0A45660B7A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,6 +245,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3297712BD9EC2C4BF552BF72 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B7D3539DBA159D0A45660B7A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-geny-webrtc/Pods-geny-webrtc-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EECF59CF1B689BE2009D2408 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -217,6 +285,7 @@
 			files = (
 				EECF59DE1B689BE3009D2408 /* ViewController.swift in Sources */,
 				EECF59D91B689BE3009D2408 /* AppDelegate.swift in Sources */,
+				EECF59FE1B689DC7009D2408 /* RTCAppClient.swift in Sources */,
 				EECF59DC1B689BE3009D2408 /* geny_webrtc.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,21 +413,25 @@
 		};
 		EECF59F61B689BE3009D2408 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C0A78AAD0FDDD0554974D9D /* Pods-geny-webrtc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "geny-webrtc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "geny-webrtc/RTC-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		EECF59F71B689BE3009D2408 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 664C0F88B3F2204A516140E6 /* Pods-geny-webrtc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "geny-webrtc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "geny-webrtc/RTC-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -415,6 +488,7 @@
 				EECF59F71B689BE3009D2408 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EECF59F81B689BE3009D2408 /* Build configuration list for PBXNativeTarget "geny-webrtcTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +497,7 @@
 				EECF59FA1B689BE3009D2408 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
