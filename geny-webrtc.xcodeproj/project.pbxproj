@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EECF59D91B689BE3009D2408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF59D81B689BE3009D2408 /* AppDelegate.swift */; };
+		EECF59DC1B689BE3009D2408 /* geny_webrtc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EECF59DA1B689BE3009D2408 /* geny_webrtc.xcdatamodeld */; };
+		EECF59DE1B689BE3009D2408 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF59DD1B689BE3009D2408 /* ViewController.swift */; };
+		EECF59E11B689BE3009D2408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECF59DF1B689BE3009D2408 /* Main.storyboard */; };
+		EECF59E31B689BE3009D2408 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EECF59E21B689BE3009D2408 /* Images.xcassets */; };
+		EECF59E61B689BE3009D2408 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EECF59E41B689BE3009D2408 /* LaunchScreen.xib */; };
+		EECF59F21B689BE3009D2408 /* geny_webrtcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF59F11B689BE3009D2408 /* geny_webrtcTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EECF59EC1B689BE3009D2408 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EECF59CB1B689BE2009D2408 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EECF59D21B689BE2009D2408;
+			remoteInfo = "geny-webrtc";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EECF59D31B689BE2009D2408 /* geny-webrtc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "geny-webrtc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EECF59D71B689BE3009D2408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EECF59D81B689BE3009D2408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EECF59DB1B689BE3009D2408 /* geny_webrtc.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = geny_webrtc.xcdatamodel; sourceTree = "<group>"; };
+		EECF59DD1B689BE3009D2408 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EECF59E01B689BE3009D2408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EECF59E21B689BE3009D2408 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EECF59E51B689BE3009D2408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EECF59EB1B689BE3009D2408 /* geny-webrtcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "geny-webrtcTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EECF59F01B689BE3009D2408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EECF59F11B689BE3009D2408 /* geny_webrtcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = geny_webrtcTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EECF59D01B689BE2009D2408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EECF59E81B689BE3009D2408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EECF59CA1B689BE2009D2408 = {
+			isa = PBXGroup;
+			children = (
+				EECF59D51B689BE2009D2408 /* geny-webrtc */,
+				EECF59EE1B689BE3009D2408 /* geny-webrtcTests */,
+				EECF59D41B689BE2009D2408 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EECF59D41B689BE2009D2408 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EECF59D31B689BE2009D2408 /* geny-webrtc.app */,
+				EECF59EB1B689BE3009D2408 /* geny-webrtcTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EECF59D51B689BE2009D2408 /* geny-webrtc */ = {
+			isa = PBXGroup;
+			children = (
+				EECF59D81B689BE3009D2408 /* AppDelegate.swift */,
+				EECF59DD1B689BE3009D2408 /* ViewController.swift */,
+				EECF59DF1B689BE3009D2408 /* Main.storyboard */,
+				EECF59E21B689BE3009D2408 /* Images.xcassets */,
+				EECF59E41B689BE3009D2408 /* LaunchScreen.xib */,
+				EECF59DA1B689BE3009D2408 /* geny_webrtc.xcdatamodeld */,
+				EECF59D61B689BE2009D2408 /* Supporting Files */,
+			);
+			path = "geny-webrtc";
+			sourceTree = "<group>";
+		};
+		EECF59D61B689BE2009D2408 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EECF59D71B689BE3009D2408 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EECF59EE1B689BE3009D2408 /* geny-webrtcTests */ = {
+			isa = PBXGroup;
+			children = (
+				EECF59F11B689BE3009D2408 /* geny_webrtcTests.swift */,
+				EECF59EF1B689BE3009D2408 /* Supporting Files */,
+			);
+			path = "geny-webrtcTests";
+			sourceTree = "<group>";
+		};
+		EECF59EF1B689BE3009D2408 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EECF59F01B689BE3009D2408 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EECF59D21B689BE2009D2408 /* geny-webrtc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EECF59F51B689BE3009D2408 /* Build configuration list for PBXNativeTarget "geny-webrtc" */;
+			buildPhases = (
+				EECF59CF1B689BE2009D2408 /* Sources */,
+				EECF59D01B689BE2009D2408 /* Frameworks */,
+				EECF59D11B689BE2009D2408 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "geny-webrtc";
+			productName = "geny-webrtc";
+			productReference = EECF59D31B689BE2009D2408 /* geny-webrtc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EECF59EA1B689BE3009D2408 /* geny-webrtcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EECF59F81B689BE3009D2408 /* Build configuration list for PBXNativeTarget "geny-webrtcTests" */;
+			buildPhases = (
+				EECF59E71B689BE3009D2408 /* Sources */,
+				EECF59E81B689BE3009D2408 /* Frameworks */,
+				EECF59E91B689BE3009D2408 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EECF59ED1B689BE3009D2408 /* PBXTargetDependency */,
+			);
+			name = "geny-webrtcTests";
+			productName = "geny-webrtcTests";
+			productReference = EECF59EB1B689BE3009D2408 /* geny-webrtcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EECF59CB1B689BE2009D2408 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = ghostmac;
+				TargetAttributes = {
+					EECF59D21B689BE2009D2408 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					EECF59EA1B689BE3009D2408 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = EECF59D21B689BE2009D2408;
+					};
+				};
+			};
+			buildConfigurationList = EECF59CE1B689BE2009D2408 /* Build configuration list for PBXProject "geny-webrtc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EECF59CA1B689BE2009D2408;
+			productRefGroup = EECF59D41B689BE2009D2408 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EECF59D21B689BE2009D2408 /* geny-webrtc */,
+				EECF59EA1B689BE3009D2408 /* geny-webrtcTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EECF59D11B689BE2009D2408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EECF59E11B689BE3009D2408 /* Main.storyboard in Resources */,
+				EECF59E61B689BE3009D2408 /* LaunchScreen.xib in Resources */,
+				EECF59E31B689BE3009D2408 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EECF59E91B689BE3009D2408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EECF59CF1B689BE2009D2408 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EECF59DE1B689BE3009D2408 /* ViewController.swift in Sources */,
+				EECF59D91B689BE3009D2408 /* AppDelegate.swift in Sources */,
+				EECF59DC1B689BE3009D2408 /* geny_webrtc.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EECF59E71B689BE3009D2408 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EECF59F21B689BE3009D2408 /* geny_webrtcTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EECF59ED1B689BE3009D2408 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EECF59D21B689BE2009D2408 /* geny-webrtc */;
+			targetProxy = EECF59EC1B689BE3009D2408 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EECF59DF1B689BE3009D2408 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EECF59E01B689BE3009D2408 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EECF59E41B689BE3009D2408 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EECF59E51B689BE3009D2408 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EECF59F31B689BE3009D2408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EECF59F41B689BE3009D2408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EECF59F61B689BE3009D2408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "geny-webrtc/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EECF59F71B689BE3009D2408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "geny-webrtc/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EECF59F91B689BE3009D2408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "geny-webrtcTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/geny-webrtc.app/geny-webrtc";
+			};
+			name = Debug;
+		};
+		EECF59FA1B689BE3009D2408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "geny-webrtcTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/geny-webrtc.app/geny-webrtc";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EECF59CE1B689BE2009D2408 /* Build configuration list for PBXProject "geny-webrtc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EECF59F31B689BE3009D2408 /* Debug */,
+				EECF59F41B689BE3009D2408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EECF59F51B689BE3009D2408 /* Build configuration list for PBXNativeTarget "geny-webrtc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EECF59F61B689BE3009D2408 /* Debug */,
+				EECF59F71B689BE3009D2408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EECF59F81B689BE3009D2408 /* Build configuration list for PBXNativeTarget "geny-webrtcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EECF59F91B689BE3009D2408 /* Debug */,
+				EECF59FA1B689BE3009D2408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EECF59DA1B689BE3009D2408 /* geny_webrtc.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EECF59DB1B689BE3009D2408 /* geny_webrtc.xcdatamodel */,
+			);
+			currentVersion = EECF59DB1B689BE3009D2408 /* geny_webrtc.xcdatamodel */;
+			path = geny_webrtc.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EECF59CB1B689BE2009D2408 /* Project object */;
+}
