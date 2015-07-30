@@ -17,6 +17,11 @@
 		EECF59F21B689BE3009D2408 /* geny_webrtcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF59F11B689BE3009D2408 /* geny_webrtcTests.swift */; };
 		EECF59FC1B689BFD009D2408 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECF59FB1B689BFD009D2408 /* VideoToolbox.framework */; };
 		EECF59FE1B689DC7009D2408 /* RTCAppClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF59FD1B689DC7009D2408 /* RTCAppClient.swift */; };
+		EECF5A031B68C0EA009D2408 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EECF5A021B68C0EA009D2408 /* libicucore.dylib */; };
+		EECF5A051B68C0F2009D2408 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECF5A041B68C0F2009D2408 /* CFNetwork.framework */; };
+		EECF5A071B68C0FA009D2408 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECF5A061B68C0FA009D2408 /* Security.framework */; };
+		EECF5A091B68C103009D2408 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECF5A081B68C103009D2408 /* Foundation.framework */; };
+		EECF5A321B68CF7F009D2408 /* SocketChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF5A311B68CF7F009D2408 /* SocketChannel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,11 @@
 		EECF59FB1B689BFD009D2408 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		EECF59FD1B689DC7009D2408 /* RTCAppClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTCAppClient.swift; sourceTree = "<group>"; };
 		EECF59FF1B689DFC009D2408 /* RTC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RTC-Bridging-Header.h"; sourceTree = "<group>"; };
+		EECF5A021B68C0EA009D2408 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		EECF5A041B68C0F2009D2408 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		EECF5A061B68C0FA009D2408 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EECF5A081B68C103009D2408 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EECF5A311B68CF7F009D2408 /* SocketChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketChannel.swift; sourceTree = "<group>"; };
 		F1725E9F99C13F2DBB4E39DF /* libPods-geny-webrtc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-geny-webrtc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -54,6 +64,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EECF5A091B68C103009D2408 /* Foundation.framework in Frameworks */,
+				EECF5A071B68C0FA009D2408 /* Security.framework in Frameworks */,
+				EECF5A051B68C0F2009D2408 /* CFNetwork.framework in Frameworks */,
+				EECF5A031B68C0EA009D2408 /* libicucore.dylib in Frameworks */,
 				EECF59FC1B689BFD009D2408 /* VideoToolbox.framework in Frameworks */,
 				01D9D58357D016E90A104C74 /* libPods-geny-webrtc.a in Frameworks */,
 			);
@@ -81,6 +95,10 @@
 		938144550F88D9C1B8654592 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EECF5A081B68C103009D2408 /* Foundation.framework */,
+				EECF5A061B68C0FA009D2408 /* Security.framework */,
+				EECF5A041B68C0F2009D2408 /* CFNetwork.framework */,
+				EECF5A021B68C0EA009D2408 /* libicucore.dylib */,
 				F1725E9F99C13F2DBB4E39DF /* libPods-geny-webrtc.a */,
 			);
 			name = Frameworks;
@@ -119,6 +137,7 @@
 				EECF59D61B689BE2009D2408 /* Supporting Files */,
 				EECF59FD1B689DC7009D2408 /* RTCAppClient.swift */,
 				EECF59FF1B689DFC009D2408 /* RTC-Bridging-Header.h */,
+				EECF5A311B68CF7F009D2408 /* SocketChannel.swift */,
 			);
 			path = "geny-webrtc";
 			sourceTree = "<group>";
@@ -286,6 +305,7 @@
 				EECF59DE1B689BE3009D2408 /* ViewController.swift in Sources */,
 				EECF59D91B689BE3009D2408 /* AppDelegate.swift in Sources */,
 				EECF59FE1B689DC7009D2408 /* RTCAppClient.swift in Sources */,
+				EECF5A321B68CF7F009D2408 /* SocketChannel.swift in Sources */,
 				EECF59DC1B689BE3009D2408 /* geny_webrtc.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,8 +436,16 @@
 			baseConfigurationReference = 0C0A78AAD0FDDD0554974D9D /* Pods-geny-webrtc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocketRocket/build/Debug",
+				);
 				INFOPLIST_FILE = "geny-webrtc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "geny-webrtc/RTC-Bridging-Header.h";
 			};
@@ -428,8 +456,16 @@
 			baseConfigurationReference = 664C0F88B3F2204A516140E6 /* Pods-geny-webrtc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocketRocket/build/Debug",
+				);
 				INFOPLIST_FILE = "geny-webrtc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "geny-webrtc/RTC-Bridging-Header.h";
 			};

@@ -17,6 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		// Override point for customization after application launch.
+		let VC:ViewController = ViewController()
+		self.window!.rootViewController = VC
+		self.window!.backgroundColor = UIColor.whiteColor()
+		
 		return true
 	}
 
