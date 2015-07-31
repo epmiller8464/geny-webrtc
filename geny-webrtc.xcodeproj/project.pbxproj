@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		01D9D58357D016E90A104C74 /* libPods-geny-webrtc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1725E9F99C13F2DBB4E39DF /* libPods-geny-webrtc.a */; };
+		EE8172AC1B6ACE8A004B850B /* TurnClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8172AB1B6ACE8A004B850B /* TurnClient.swift */; };
+		EE8172B01B6AF926004B850B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8172AF1B6AF926004B850B /* Extensions.swift */; };
+		EE8172B41B6B4683004B850B /* RTCIceServer+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8172B31B6B4683004B850B /* RTCIceServer+JSON.swift */; };
+		EE8172B61B6B567A004B850B /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8172B51B6B567A004B850B /* Globals.swift */; };
 		EECF59D91B689BE3009D2408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF59D81B689BE3009D2408 /* AppDelegate.swift */; };
 		EECF59DC1B689BE3009D2408 /* geny_webrtc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EECF59DA1B689BE3009D2408 /* geny_webrtc.xcdatamodeld */; };
 		EECF59DE1B689BE3009D2408 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF59DD1B689BE3009D2408 /* ViewController.swift */; };
@@ -37,6 +41,14 @@
 /* Begin PBXFileReference section */
 		0C0A78AAD0FDDD0554974D9D /* Pods-geny-webrtc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geny-webrtc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-geny-webrtc/Pods-geny-webrtc.debug.xcconfig"; sourceTree = "<group>"; };
 		664C0F88B3F2204A516140E6 /* Pods-geny-webrtc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geny-webrtc.release.xcconfig"; path = "Pods/Target Support Files/Pods-geny-webrtc/Pods-geny-webrtc.release.xcconfig"; sourceTree = "<group>"; };
+		EE8172A71B6AAB89004B850B /* DemoNewFormat.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DemoNewFormat.playground; sourceTree = "<group>"; };
+		EE8172A81B6AAD71004B850B /* webrtc-pg.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "webrtc-pg.playground"; sourceTree = "<group>"; };
+		EE8172AB1B6ACE8A004B850B /* TurnClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurnClient.swift; sourceTree = "<group>"; };
+		EE8172AD1B6AD862004B850B /* Request.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Request.playground; sourceTree = "<group>"; };
+		EE8172AE1B6AD875004B850B /* Patterns.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Patterns.playground; sourceTree = "<group>"; };
+		EE8172AF1B6AF926004B850B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EE8172B31B6B4683004B850B /* RTCIceServer+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RTCIceServer+JSON.swift"; sourceTree = "<group>"; };
+		EE8172B51B6B567A004B850B /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		EECF59D31B689BE2009D2408 /* geny-webrtc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "geny-webrtc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECF59D71B689BE3009D2408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EECF59D81B689BE3009D2408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +119,9 @@
 		EECF59CA1B689BE2009D2408 = {
 			isa = PBXGroup;
 			children = (
+				EE8172AE1B6AD875004B850B /* Patterns.playground */,
+				EE8172AD1B6AD862004B850B /* Request.playground */,
+				EE8172A81B6AAD71004B850B /* webrtc-pg.playground */,
 				EECF59FB1B689BFD009D2408 /* VideoToolbox.framework */,
 				EECF59D51B689BE2009D2408 /* geny-webrtc */,
 				EECF59EE1B689BE3009D2408 /* geny-webrtcTests */,
@@ -131,6 +146,7 @@
 				EECF59D81B689BE3009D2408 /* AppDelegate.swift */,
 				EECF59DD1B689BE3009D2408 /* ViewController.swift */,
 				EECF59DF1B689BE3009D2408 /* Main.storyboard */,
+				EE8172A71B6AAB89004B850B /* DemoNewFormat.playground */,
 				EECF59E21B689BE3009D2408 /* Images.xcassets */,
 				EECF59E41B689BE3009D2408 /* LaunchScreen.xib */,
 				EECF59DA1B689BE3009D2408 /* geny_webrtc.xcdatamodeld */,
@@ -138,6 +154,10 @@
 				EECF59FD1B689DC7009D2408 /* RTCAppClient.swift */,
 				EECF59FF1B689DFC009D2408 /* RTC-Bridging-Header.h */,
 				EECF5A311B68CF7F009D2408 /* SocketChannel.swift */,
+				EE8172AB1B6ACE8A004B850B /* TurnClient.swift */,
+				EE8172AF1B6AF926004B850B /* Extensions.swift */,
+				EE8172B31B6B4683004B850B /* RTCIceServer+JSON.swift */,
+				EE8172B51B6B567A004B850B /* Globals.swift */,
 			);
 			path = "geny-webrtc";
 			sourceTree = "<group>";
@@ -303,10 +323,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EECF59DE1B689BE3009D2408 /* ViewController.swift in Sources */,
+				EE8172AC1B6ACE8A004B850B /* TurnClient.swift in Sources */,
 				EECF59D91B689BE3009D2408 /* AppDelegate.swift in Sources */,
 				EECF59FE1B689DC7009D2408 /* RTCAppClient.swift in Sources */,
 				EECF5A321B68CF7F009D2408 /* SocketChannel.swift in Sources */,
+				EE8172B41B6B4683004B850B /* RTCIceServer+JSON.swift in Sources */,
 				EECF59DC1B689BE3009D2408 /* geny_webrtc.xcdatamodeld in Sources */,
+				EE8172B01B6AF926004B850B /* Extensions.swift in Sources */,
+				EE8172B61B6B567A004B850B /* Globals.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

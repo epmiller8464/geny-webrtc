@@ -5,7 +5,7 @@
 //  Created by ghostmac on 7/29/15.
 //  Copyright (c) 2015 ghostmac. All rights reserved.
 //
-
+import Foundation
 import UIKit
 import XCTest
 
@@ -24,6 +24,7 @@ class geny_webrtcTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         XCTAssert(true, "Pass")
+		
     }
     
     func testPerformanceExample() {

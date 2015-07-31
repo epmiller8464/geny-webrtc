@@ -31,7 +31,7 @@ class ViewController: UIViewController,SRWebSocketDelegate {
 		button.setTitleColor(UIColor(red: 0, green: 0, blue: 0, alpha: 1), forState: UIControlState.Highlighted)
 		button.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
 		self.view.addSubview(button)
-
+		
 	}
 	
 	func buttonAction(sender:UIButton!) {
@@ -51,16 +51,21 @@ class ViewController: UIViewController,SRWebSocketDelegate {
 		*
 		*/
 		
-		var jsonSendError:NSError?
-		var jsonSend = NSJSONSerialization.dataWithJSONObject(dict, options: NSJSONWritingOptions(0), error: &jsonSendError)
-		var jsonString = NSString(data: jsonSend!, encoding: NSUTF8StringEncoding)
-		println("JSON SENT \(jsonString)")
+		//		var jsonSendError:NSError?
+		//		var jsonSend = NSJSONSerialization.dataWithJSONObject(dict, options: NSJSONWritingOptions(0), error: &jsonSendError)
+		//		var jsonString = NSString(data: jsonSend!, encoding: NSUTF8StringEncoding)
+		//		println("JSON SENT \(jsonString)")
+		//
+		//		let str:NSString = "5:::\(jsonString)";
 		
-		let str:NSString = "5:::\(jsonString)"
-		self.webSocket!.send(str)
+		var data = ["id": "msg" , "data": "testing......123",];
+		var e  = 	NSErrorPointer();
+		var jsonData =	NSJSONSerialization.dataWithJSONObject(data, options: NSJSONWritingOptions.PrettyPrinted, error: e)//obj: data,);
+		
+		self.webSocket!.send(jsonData);
 		
 	}
-
+	
 	
 	//SWIFT REQUIREMENTS
 	required init(coder aDecoder: NSCoder) {
@@ -80,16 +85,16 @@ class ViewController: UIViewController,SRWebSocketDelegate {
 	}
 	
 	func connectWebSocket() {
-
+		
 		if self.webSocket != nil{
-//			self.webSocket?.close()
+			//			self.webSocket?.close()
 			self.webSocket!.delegate = nil;
 			self.webSocket = nil;
 		}
 		
 		
-		var _socketio = SRWebSocket(URLRequest: NSURLRequest(URL: NSURL(string: "ws://localhost:8181/call")!))
-		_socketio.delegate = self// as! SRWebSocketDelegate;
+		var _socketio = SRWebSocket(URLRequest: NSURLRequest(URL: NSURL(string: "ws://localhost:8181/call")!));
+		_socketio.delegate = self;// as! SRWebSocketDelegate;
 		_socketio.open();
 		//println("\(socketio!.readyState)");
 	}
@@ -121,7 +126,7 @@ class ViewController: UIViewController,SRWebSocketDelegate {
 		//self.connectWebSocket();
 	}
 	
-
+	
 	func webSocket(webSocket: SRWebSocket!, didReceivePong pongPayload: NSData!) {
 		println(pongPayload);
 	}
@@ -136,7 +141,7 @@ class ViewController: UIViewController,SRWebSocketDelegate {
 	}
 	func webSocket(webSocket: SRWebSocket!, didCloseWithCode code: Int, reason: String!, wasClean: Bool) {
 		self.webSocket = webSocket!;
-
+		
 		//self.webSocket?.close()
 		self.connectWebSocket();
 	}	
