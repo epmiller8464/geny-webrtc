@@ -22,7 +22,7 @@ public extension String{
 
 public extension NSDictionary {
 	
-	public func dictionaryWithJSONString(jsonString:NSString?) -> NSDictionary {
+	public static func dictionaryWithJSONString(jsonString:NSString?) -> NSDictionary {
 		var data = jsonString!.dataUsingEncoding(NSUTF8StringEncoding);
 		var error : NSErrorPointer? = nil;
 		var dict = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.allZeros, error: error!) as! NSDictionary;
@@ -33,7 +33,7 @@ public extension NSDictionary {
 		return dict;
 	}
 	
-	public func dictionaryWithJSONData(jsonData:NSData?) -> NSDictionary {
+	public static func dictionaryWithJSONData(jsonData:NSData?) -> NSDictionary {
 		
 		var error : NSErrorPointer? = nil;
 		var dict = NSJSONSerialization.JSONObjectWithData(jsonData!, options: NSJSONReadingOptions.allZeros, error: error!) as! NSDictionary;
@@ -50,7 +50,7 @@ public extension NSDictionary {
 public extension NSURLConnection {
 	
 	
-	public func sendAsyncRequest(request:NSURLRequest,completionHandler: ((response: NSURLResponse?, data:NSData?,error:NSError?) -> Void)?) -> Void {
+	public static func sendAsyncRequest(request:NSURLRequest,completionHandler: ((response: NSURLResponse?, data:NSData?,error:NSError?) -> Void)?) -> Void {
 		
 		///kick off async request which will call back on the main thread.
 		NSURLConnection.sendAsynchronousRequest(request,
@@ -63,7 +63,7 @@ public extension NSURLConnection {
 	}
 	
 	
-	public func sendAsyncPostToURL(url:NSURL?,withData data: NSData?,completionHandler: ((succeeded:Bool,data:NSData?) -> Void)?) -> Void {
+	public static func sendAsyncPostToURL(url:NSURL?,withData data: NSData?,completionHandler: ((succeeded:Bool,data:NSData?) -> Void)?) -> Void {
 		
 		var request = NSMutableURLRequest(URL:url!);
 		request.HTTPMethod = "POST";

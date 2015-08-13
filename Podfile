@@ -7,7 +7,8 @@ target 'geny-webrtc' do
 end
 
 target 'geny-webrtcTests' do
-
+		pod 'libjingle_peerconnection'
+	pod 'SocketRocket'
 end
 
 post_install do |installer_representation|

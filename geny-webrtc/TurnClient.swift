@@ -43,7 +43,7 @@ public class TurnClient : CEODTurnClientProtocol, AnyObject{
 		//		NSURLConnection.sendAsyncPostToURL(request:request)
 		var c = NSURLConnection();
 		
-		NSURLConnection().sendAsyncRequest(request,
+		NSURLConnection.sendAsyncRequest(request,
 			completionHandler:{
 				(response:NSURLResponse?, data:NSData?,error: NSError?) -> Void in
 				
@@ -53,7 +53,7 @@ public class TurnClient : CEODTurnClientProtocol, AnyObject{
 					return;
 				}
 				
-				var data =	NSDictionary().dictionaryWithJSONData(data!);
+				var data =	NSDictionary.dictionaryWithJSONData(data!);
 				turnServers = RTCICEServerJSON.serversFromCEODJSONDictionary(data);
 				var e =  NSError(domain:TurnClient.kARDCEODTURNClientErrorDomain, code:TurnClient.kARDCEODTURNClientErrorBadResponse,userInfo: [NSLocalizedDescriptionKey: "bad request fool"]);
 				if 0 == turnServers.count {

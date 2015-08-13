@@ -16,17 +16,17 @@ public class RTCICEServerJSON  {
 	public static let kRTCICEServerUrlKey :NSString = "urls";
 	public static let kRTCICEServerCredentialKey :NSString = "credential";
 	
-		public static func serverFromJSONDictionary(dict:NSDictionary) -> RTCICEServer {
-
-			var url = dict[RTCICEServerJSON.kRTCICEServerUrlKey] as! NSString;
-			var username = dict[RTCICEServerJSON.kRTCICEServerUsernameKey] as! NSString ;
-			var credential = dict[RTCICEServerJSON.kRTCICEServerCredentialKey] as! NSString;
-			
-			username = isNilOrEmpty(username) ? username:"";
-			credential = isNilOrEmpty(credential) ? credential:"";
-
-			return RTCICEServer(URI: NSURL(string: url as String)! , username: username as String, password: credential as String);
-		}
+	public static func serverFromJSONDictionary(dict:NSDictionary) -> RTCICEServer {
+		
+		var url = dict[RTCICEServerJSON.kRTCICEServerUrlKey] as! NSString;
+		var username = dict[RTCICEServerJSON.kRTCICEServerUsernameKey] as! NSString ;
+		var credential = dict[RTCICEServerJSON.kRTCICEServerCredentialKey] as! NSString;
+		
+		username = isNilOrEmpty(username) ? username:"";
+		credential = isNilOrEmpty(credential) ? credential:"";
+		
+		return RTCICEServer(URI: NSURL(string: url as String)! , username: username as String, password: credential as String);
+	}
 	
 	public static func serversFromCEODJSONDictionary(dict:NSDictionary) -> NSArray {
 		

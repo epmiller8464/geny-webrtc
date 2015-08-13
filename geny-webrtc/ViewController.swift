@@ -108,7 +108,7 @@ class ViewController: UIViewController,SRWebSocketDelegate {
 	func webSocketDidOpen(webSocket: SRWebSocket!) {
 		println("webSocketDidOpen");
 		self.webSocket = webSocket!;
-		var data = ["id": "master" , "sdpOffer":""];
+		var data = ["id": "viewer" , "sdpOffer":""];
 		var e  = 	NSErrorPointer();
 		var x =	NSJSONSerialization.dataWithJSONObject(data, options: NSJSONWritingOptions.PrettyPrinted, error: e)//obj: data,);
 		
@@ -118,7 +118,7 @@ class ViewController: UIViewController,SRWebSocketDelegate {
 	func webSocket(webSocket: SRWebSocket!)  {
 		println("webSocket(webSocket: SRWebSocket!");
 		self.webSocket = webSocket!;
-		var data = ["id": "master" , "sdpOffer":""];
+		var data = ["id": "viewer" , "sdpOffer":""];
 		var e  = 	NSErrorPointer();
 		var x =	NSJSONSerialization.dataWithJSONObject(data, options: NSJSONWritingOptions.PrettyPrinted, error: e)//obj: data,);
 		

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-geny-webrtc-SocketRocket.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-geny-webrtc.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-geny-webrtcTests-SocketRocket.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-geny-webrtcTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>2FED613525C8ACD8DAA5E976</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>48CB6DA699410A0CE002A101</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C7D7BCBBFC09926D423152FD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D524CC6F16E45CFB7F04ABED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

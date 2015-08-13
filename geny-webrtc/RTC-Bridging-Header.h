@@ -14,3 +14,6 @@
 #import "RTCVideoTrack.h"
 #import "SRWebSocket.h"
 #import "RTCIceServer.h"
+#import "RTCICECandidate.H"
+#import "RTCMediaConstraints.h"
+#import "RTCPair.h"

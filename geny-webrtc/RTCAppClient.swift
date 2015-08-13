@@ -8,25 +8,34 @@
 
 import Foundation;
 import CoreData;
-//import SocketRocket
-//import SRWebSocket;
-//let cd = RTCPeerConnectionFactory();
 
-//@objc SRWebSocket;
-//class SerializedDocument:  NSDocument {
-//	static let ErrorDomain = "com.example.error.serialized-document"
-//	
-//	var representedObject: [String: AnyObject] = [:]
-//	
-//	override func readFromFileWrapper(fileWrapper: NSFileWrapper, ofType typeName: String) throws {
-//	guard let data = fileWrapper.regularFileContents else {
-//	throw NSError(domain: NSURLErrorDomain, code: NSURLErrorCannotOpenFile, userInfo: nil)
-//	}
-//	
-//	if case let JSON as [String: AnyObject] = try NSJSONSerialization.JSONObjectWithData(data, options: []) {
-//	self.representedObject = JSON
-//	} else {
-//	throw NSError(domain: SerializedDocument.ErrorDomain, code: -1, userInfo: nil)
-//	}
-//	}
-//}
+
+enum RTCAppClientState : Int{
+	case kARDAppClientStateDisconnected ,kARDAppClientStateConnecting,kARDAppClientStateConnected
+	// Connecting to servers.
+	//	case ;
+	// Connected to servers.
+	//	case ;
+	
+}
+
+protocol RTCAppClientDelegate : AnyObject {
+	
+	//func appClient(RTCAppClient
+	
+	
+}
+
+
+protocol RTCAppClientProtocol: AnyObject {
+	
+	var state : RTCAppClientState {get}
+	
+	var delegate: RTCAppClientDelegate {get set}
+	
+	init(delegate:RTCAppClientDelegate );
+	
+	func connectToRoomWithId(roomId:NSString,options:NSDictionary) -> Void;
+	
+	func disconnect();
+}
